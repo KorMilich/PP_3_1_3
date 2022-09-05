@@ -41,7 +41,12 @@ public class Init {
         User admin = new User("Anton", "Antonov", 40, "admin@mail.ru", "admin",
                 "admin", adminSet);
 
+
+        User adminGreg = new User("Greg", "Gregov", 40, "greg@mail.ru", "adminGreg",
+                "adminGreg", adminSet);
+
         userService.saveUser(newUser);
         userService.saveUser(admin);
+        userService.saveUser(adminGreg);
     }
 }
